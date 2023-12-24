@@ -2,12 +2,11 @@ package com.suitmedia.suitmediamobiletestintern.data.retrofit
 
 
 import android.content.Context
+import com.suitmedia.suitmediamobiletestintern.utils.API_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
-import com.suitmedia.suitmediamobiletestintern.utils.API_URL
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
 
 class ApiConfig {
     companion object{

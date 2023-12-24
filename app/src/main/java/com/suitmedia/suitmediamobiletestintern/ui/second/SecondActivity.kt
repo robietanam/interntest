@@ -2,9 +2,10 @@ package com.suitmedia.suitmediamobiletestintern.ui.second
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import com.suitmedia.suitmediamobiletestintern.R
 import com.suitmedia.suitmediamobiletestintern.databinding.ActivitySecondBinding
 import com.suitmedia.suitmediamobiletestintern.ui.third.ThirdActivity
 
@@ -33,7 +34,7 @@ class SecondActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val actionbar = supportActionBar
-        actionbar!!.title = "Second Screen"
+        actionbar!!.title = getString(R.string.title_second_screen)
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val username = intent.getStringExtra(SECOND_INTENT_KEY)

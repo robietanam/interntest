@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SuitMediaMobileTestIntern</string>
+    <string name="title_third_screen">Third Screen</string>
+    <string name="title_second_screen">Second Screen</string>
+    <string name="ispalindrome">isPalindrome</string>
+    <string name="too_short">Input terlalu pendek</string>
+    <string name="not_palindrome">not palindrome</string>
+    <string name="hint_name">Nama</string>
+    <string name="btnname_check">CHECK</string>
+    <string name="btnname_next">NEXT</string>
+    <string name="btnname_palindrome">Palindrome</string>
+    <string name="welcome">Welcome</string>
+    <string name="username">Username</string>
+    <string name="selected_user_name">Selected User Name</string>
+    <string name="btnname_choose_a_user">Choose a User</string>
+    <string name="nodata">Tidak ada data yang ditemukan</string>
+    <string name="email">Email</string>
+    <string name="firstname_lastname">Firstname Lastname</string>
 </resources>

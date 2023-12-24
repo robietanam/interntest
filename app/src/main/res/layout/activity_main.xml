@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:ellipsize="end"
             android:ems="10"
-            android:hint="Nama"
+            android:hint="@string/hint_name"
             android:inputType="text"
             android:maxLines="1" />
 
@@ -47,7 +47,7 @@
             android:id="@+id/ed_palindrome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Palindrome"
+            android:hint="@string/btnname_palindrome"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         app:cornerRadius="10dp"
-        android:text="CHECK"
+        android:text="@string/btnname_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:cornerRadius="10dp"
-        android:text="NEXT"
+        android:text="@string/btnname_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_check" />

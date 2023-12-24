@@ -1,9 +1,10 @@
 package com.suitmedia.suitmediamobiletestintern.ui.first
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.suitmedia.suitmediamobiletestintern.R
 import com.suitmedia.suitmediamobiletestintern.databinding.ActivityMainBinding
 import com.suitmedia.suitmediamobiletestintern.ui.second.SecondActivity
 
@@ -20,9 +21,9 @@ class MainActivity : AppCompatActivity() {
                 .setTitle("Message")
                 .setMessage(
                     when (isPalindrome(binding.edPalindrome.text.toString())) {
-                        1 -> "isPalindrome"
-                        -1 -> "Input terlalu pendek"
-                        else -> "not palindrome"
+                        1 -> resources.getString(R.string.ispalindrome)
+                        -1 -> resources.getString(R.string.too_short)
+                        else -> resources.getString(R.string.not_palindrome)
                     }
                 )
                 .setNeutralButton("Tutup") { dialog, which ->
@@ -52,10 +53,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun isPalindrome(str: String): Int {
         if (str.isNullOrEmpty() || str.length <= 1) return -1
+        val trim = str.trim()
         var start = 0
-        var end = str.length - 1
+        var end = trim.length - 1
         while (start < end) {
-            if (str[start] != str[end]) {
+            if (trim[start] != trim[end]) {
                 return 0
             }
             start++

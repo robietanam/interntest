@@ -2,7 +2,6 @@ package com.suitmedia.suitmediamobiletestintern.data.retrofit
 
 
 
-import com.suitmedia.suitmediamobiletestintern.data.retrofit.UserResponse
 import retrofit2.http.*
 
 interface ApiService {
